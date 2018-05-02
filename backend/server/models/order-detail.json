@@ -1,0 +1,40 @@
+{
+  "name": "order_detail",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "quantity": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "unity_price": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "partial_price": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {
+    "order": {
+      "type": "belongsTo",
+      "model": "order",
+      "foreignKey": ""
+    },
+    "book": {
+      "type": "belongsTo",
+      "model": "book",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

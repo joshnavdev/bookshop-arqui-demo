@@ -1,0 +1,43 @@
+{
+  "name": "book",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "author": {
+      "type": "string",
+      "required": true,
+      "default": "Anonimo"
+    },
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "stock": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {
+    "orderDetails": {
+      "type": "hasMany",
+      "model": "order_detail",
+      "foreignKey": "bookId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

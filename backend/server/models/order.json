@@ -1,0 +1,39 @@
+{
+  "name": "order",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "status": {
+      "type": "string",
+      "required": true,
+      "default": "Pending"
+    },
+    "date": {
+      "type": "date",
+      "defaultFn": "now"
+    },
+    "total_price": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {
+    "client": {
+      "type": "belongsTo",
+      "model": "client",
+      "foreignKey": ""
+    },
+    "orderDetails": {
+      "type": "hasMany",
+      "model": "order_detail",
+      "foreignKey": "orderId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

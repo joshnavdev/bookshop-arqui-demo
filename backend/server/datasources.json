@@ -1,0 +1,11 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "bookshopdb": {
+    "url": "mongodb://demo5mongodb-bookshop:Oc24JCyhawJXy2TsJmHErALi9LHkVIHIzkIGnWV2bCirvlXils56uVtkvovRNT4AyXyb8zMPPHc4AcsIDRTEXQ==@demo5mongodb-bookshop.documents.azure.com:10250/mean?ssl=true&sslverifycertificate=false",
+    "name": "bookshopdb",
+    "connector": "mongodb"
+  }
+}

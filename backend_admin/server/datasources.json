@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "bookshopdb": {
+    "host": "localhost",
+    "port": 47017,
+    "url": "",
+    "database": "bookshopdb",
+    "password": "",
+    "name": "bookshopdb",
+    "user": "",
+    "connector": "mongodb"
+  }
+}
